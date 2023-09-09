@@ -10,7 +10,7 @@ export const isAuthenticated = async(req , res , next) =>{
  success:false,
  message:"log in first",
  
- })
+ }) 
   
  const decoded = jwt.verify(token , process.env.JWT_SECRET);
  
